@@ -6,7 +6,10 @@ Easily create ltr or rtl css files in gulp tasks. This is a wrapper around the [
 
 1. Include gulp-css-flipper in your package.json dependencies `npm install gulp-css-flipper --save-dev`
 1. Use it like any other gulp plugin
+
 ```
+var flipper = require('gulp-css-flipper');
+
 gulp.src('/styles/*.css')
     .pipe(flipper())
     .pipe(gulp.dest('/dist/css/'))
